@@ -10,20 +10,6 @@
  */
 class Solution {
 public:
-
-    ListNode* Reverse(ListNode* head) {
-        ListNode* curr = head;
-        ListNode* prev = nullptr;
-        ListNode* temp = nullptr;
-        while(curr != nullptr) {
-            temp = curr->next;
-            curr->next = prev;
-            prev = curr;
-            curr = temp;
-        }
-        return prev;
-    }
-
     ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
         ListNode* num1 = l1;
         ListNode* num2 = l2;
