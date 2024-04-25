@@ -8,18 +8,34 @@
  */
 class Solution {
 public:
-    ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {
-        map<ListNode*, int> umap;
-        while(headA != nullptr) {
-            umap[headA] = 1;
-            headA = headA->next;
+
+    int findLength(ListNode* head) {
+        ListNode* temp = head;
+        int count = 0;
+        while(temp != nullptr) {
+            count++;
+            temp = temp->next;
         }
-        while(headB != nullptr) {
-            if(umap.find(headB) != umap.end()) {
-                return headB;
+        return count;
+    }
+
+    ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {
+        int lengthA = findLength(headA), lengthB = findLength(headB);
+        while(lengthA>lengthB) {
+            headA = headA->next;
+            lengthA--;
+        }
+        while(lengthB>lengthA) {
+            headB = headB->next;
+            lengthB--;
+        }
+        while(headA != nullptr && headB != nullptr) {
+            if(headA == headB) {
+                return headA;
             }
+            headA = headA->next;
             headB = headB->next;
         }
-        return nullptr;        
+        return nullptr;
     }
 };
