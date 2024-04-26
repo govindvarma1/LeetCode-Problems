@@ -22,7 +22,7 @@ public:
 
     ListNode* rotateRight(ListNode* head, int k) {
         int n = findLength(head);
-        if(n == 1 || n == 0 || k%n==0) {
+        if(n == 0 || k%n==0) {
             return head;
         }
         k = k%n;
