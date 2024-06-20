@@ -6,7 +6,10 @@ public:
         for(int i=0; i<n; i++) {
             prefixSum += nums[i];
             int remove = prefixSum%k;
-            if((remove == 0 && i > 0) || (hashMap.find(remove) != hashMap.end() && i - hashMap[remove] > 1)) {
+            if(remove == 0 && i > 0) {
+                return true;
+            }
+            if(hashMap.find(remove) != hashMap.end() && i - hashMap[remove] > 1) {
                 return true;
             }
             if(hashMap.find(remove) == hashMap.end()) {
