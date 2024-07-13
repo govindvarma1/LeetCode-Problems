@@ -1,0 +1,2 @@
+# Write your MySQL query statement below
+SELECT W1.id FROM Weather AS W1 WHERE W1.temperature > (SELECT temperature FROM Weather AS W2 WHERE W2.recordDate = DATE_FORMAT(W1.recordDate - INTERVAL 1 DAY, '%Y-%m-%d'));
