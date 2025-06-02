@@ -29,8 +29,17 @@ Collection of LeetCode questions solved by me using C++
 |  |
 | ------- |
 | [0075-sort-colors](https://github.com/govindvarma1/LeetCode-Problems/tree/master/0075-sort-colors) |
+| [0084-largest-rectangle-in-histogram](https://github.com/govindvarma1/LeetCode-Problems/tree/master/0084-largest-rectangle-in-histogram) |
 ## Sorting
 |  |
 | ------- |
 | [0075-sort-colors](https://github.com/govindvarma1/LeetCode-Problems/tree/master/0075-sort-colors) |
+## Stack
+|  |
+| ------- |
+| [0084-largest-rectangle-in-histogram](https://github.com/govindvarma1/LeetCode-Problems/tree/master/0084-largest-rectangle-in-histogram) |
+## Monotonic Stack
+|  |
+| ------- |
+| [0084-largest-rectangle-in-histogram](https://github.com/govindvarma1/LeetCode-Problems/tree/master/0084-largest-rectangle-in-histogram) |
 <!---LeetCode Topics End-->
